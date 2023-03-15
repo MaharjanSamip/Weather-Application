@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body onload="displayDate()" >
+    <div class="App">
+        <div class="top-section"> 
+                   
+            <div class="date">
+                <span id="display-date"></span>
+            </div>
+            <!-- date -->
+            
+            <div class="search-box">
+                <input class="search-txt" type="text" placeholder="Search a city." name="city-name">
+                <a class ="search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+            <!-- Search bar -->
+
+            <div class="nav-bar">
+                <a href="" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <!-- navbar  -->
+
+        </div>
+        <!-- top section -->
+
+        <div class="mid-section">
+            <div class="icon">
+                <img src="" alt="">
+            </div>
+            <!-- icon  -->
+
+            <div class="weather-type">
+                <p>Hazy Clouds</p>
+            </div>
+            <!-- weather-type  -->
+
+        </div>
+        <!-- mid-section  -->
+
+        <div class="bottom-section">
+            <div class="city-name">
+                <p>Kathmandu</p>
+            </div>
+            <!-- city name  -->
+            <div class="for-flex">
+
+                <div class="temperature">
+                    <h3>27*C</h3>
+                </div>
+                <!-- temperature  -->
+
+                <div class="feels-like">
+                    <p>Feels like 22*C </p>
+                </div>
+                <!-- feels like section  -->
+            
+            </div>
+            <!-- For flex  -->
+        </div>  
+        <!-- bottom-section  -->    
+
+        <div class="footer-section">
+            <div class="pressure props">
+                <p>pressure: 10</p>
+            </div>
+            <!-- Pressure  -->
+
+            <div class="humidity props">
+                <p>humidity: 100</p>
+            </div>
+            <!-- humidity  -->
+
+            <div class="wind props">
+                <p>Wind: 10km/h</p>
+            </div>
+            <!-- wind  -->
+        </div>
+        <!-- footer section  -->
+
+    </div>
+    <!-- App section  -->
+</body>
+</html>
