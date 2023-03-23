@@ -12,23 +12,7 @@ body{
     padding: 1px;
 }
 .App{
-    /* background-image: url('https://lh3.googleusercontent.com/pw/AMWts8AAA1vIvfoJlcABmWiW0ajmcS_0tX9gE9KCmRDjn_E5T2_OyIztnewW1Fm8FwCgECJmirLyfkap6sBmjWNSuo1YdutFnsEdw5sXzt8cwR1OOiV6duV67uknGA1u8RuGRXw-RDuTJDk0OGFFoivtwf5v=w340-h560-no?authuser=0'); */
-    /* Rain 0.9 */
-    /* background-image: url('https://lh3.googleusercontent.com/pw/AMWts8BEkJHl8vjxFMqe41teP4nd89N3enu00dYYDL4sSYWoaV-4GBfyNNL3lnVTctS-RaYUzHlK29ENTH3ni-6ocZM-PciV705Xc7-04mMQ86w1vKxT7kM6p8HK1Q4K6EQyvlDkJZtssUxPVC9l3L0PnWpO=w340-h560-no?authuser=0');  */
-    /* Clouds  0.8*/
-
-    /* background-image: url('https://lh3.googleusercontent.com/pw/AMWts8D4-YLQEeMugD1xHIEOnBvhLu2EWBmkbhoxwtXfMtAa5pjpb2dm7tAnzvZg_TpWwJSw380tmHq19FbMDhO0w795AVPX18TrRQhjgccR8rqnMjriNVtmlQZ0xiEmL1XOhoKHInMP7SwtVKpyi1T3K48R=w340-h560-no?authuser=0'); */
-    /* Haze  1*/
-
-    /* background-image: url('https://lh3.googleusercontent.com/pw/AMWts8AynDiLxMRuLG4iKBKiMGAKAFM4tqhQqYuF_azmHapkhlQ05PTby3Wf1z-m8hIm2Bu5ne2oA-zUVAFs4c6-O7I4Rrf_hsZxwl9plouxnVVO9cf5DQIOT1z3aTjFsxiWDIAdZt7qUCvMUpJKrZxSSsqD=w340-h560-no?authuser=0'); */
-    /* Thunderstorm  .8 */
-
-    /* background-image: url('https://lh3.googleusercontent.com/pw/AMWts8AUZfvA8OeVfIcr1IbjQP8-emc43nFKVVaaJ-hKGb0O_XeO2e80vk_rBywPnaeoj1OEGn-352le8RLcnxU7Uqm-3TXTY86hnF1eM9uHXpvlKyzgGMBkKBh6zMIEky5nd9MZmSOSNdqh0FzAlEPR-4w4=w340-h560-no?authuser=0'); */
-    /* snow 0.9 */
-
-    background-image: url('https://lh3.googleusercontent.com/pw/AMWts8BrPzbhGkUq8Eewmik9JfXZOaOdIWR2XpceF3o4FfPuhBWW3c7FvQn50FCvGDcR8x7Ee3e-Y2rA2hchh-TbtXzpSJhEgecRQya-7LSXPKEJAW8o5uitjrUTpvu5nzgtTpyhwV-wy17RD-kp6RmBVut4=w340-h540-no?authuser=0');
-
-    background-color: rgba(32, 33, 35, 0.9);
+    background-color: rgba(32, 33, 35, 0.6);
     height: 560px; 
     width: 340px;
     margin: 15px auto;
@@ -146,10 +130,13 @@ body{
     align-items: baseline;
 }
 .temperature h3{
-    font-size: 2.4rem;
+    font-size: 3.3rem;
 }
 .temperature h3,h2{
     display: block;
+}
+.temperature span{
+    height: 
 }
 /* bottom section  */
 
@@ -157,7 +144,7 @@ body{
 .footer-section{
     display: flex;
     justify-content: space-evenly;
-    height: 90px;
+    height: 50px;
 }
 .footer-section .props{
     display: flex; 

@@ -4,8 +4,10 @@ document.addEventListener(`DOMContentLoaded`, () => {
         var currentDate = new Date(); 
         document.getElementById("display-date").innerHTML = currentDate.toDateString();
     })();
+
     const searchBtn = document.querySelector('.search-btn');
     console.log(searchBtn);
+
     searchBtn.addEventListener( 'mousedown', () => {
         const cityName = document.querySelector('.search-txt').value;
         console.log(cityName);
@@ -40,7 +42,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
             const humidity = weatherData['main']['humidity'];
             const windSpeed = weatherData['wind']['speed'];
             const weatherState = `${weatherData['weather'][0]['main']}`;
-            // const weatherState = `Rain`;
+            // const weatherState = `Clouds`;
 
 
             //Inserting the fetched values to their respective classes in HTML
@@ -51,34 +53,56 @@ document.addEventListener(`DOMContentLoaded`, () => {
             document.querySelector(".pressure span").innerHTML = parseInt(pressure);
             document.querySelector(".humidity span").innerHTML = parseInt(humidity);
             document.querySelector(".wind span").innerHTML = parseInt(windSpeed);
-
-            if ( weatherState == "Clouds" )
+            const application = document.querySelector(".App"); 
+            
+            if ( weatherState == "Clouds" ) //
             {
                 document.querySelector("#weather-icon").className = "fa-solid fa-cloud";
+
+                application.style.backgroundImage = "url('https://lh3.googleusercontent.com/pw/AMWts8BEkJHl8vjxFMqe41teP4nd89N3enu00dYYDL4sSYWoaV-4GBfyNNL3lnVTctS-RaYUzHlK29ENTH3ni-6ocZM-PciV705Xc7-04mMQ86w1vKxT7kM6p8HK1Q4K6EQyvlDkJZtssUxPVC9l3L0PnWpO=w340-h560-no?authuser=0')";
+
             }
-            else if ( weatherState == "Haze" || weatherState == "Mist" )
+            else if ( weatherState == "Haze" || weatherState == "Mist" ) //
             {
                 document.querySelector("#weather-icon").className = "fa-sharp fa-solid fa-smog";
+
+                application.style.backgroundImage = "url('https://lh3.googleusercontent.com/pw/AMWts8D4-YLQEeMugD1xHIEOnBvhLu2EWBmkbhoxwtXfMtAa5pjpb2dm7tAnzvZg_TpWwJSw380tmHq19FbMDhO0w795AVPX18TrRQhjgccR8rqnMjriNVtmlQZ0xiEmL1XOhoKHInMP7SwtVKpyi1T3K48R=w340-h560-no?authuser=0')";
+
             }
-            else if ( weatherState == "Rain" )
+            else if ( weatherState == "Rain" ) //
             {
                 document.querySelector("#weather-icon").className = "fa-solid fa-cloud-rain";
+
+                application.style.backgroundImage = "url('https://lh3.googleusercontent.com/pw/AMWts8AAA1vIvfoJlcABmWiW0ajmcS_0tX9gE9KCmRDjn_E5T2_OyIztnewW1Fm8FwCgECJmirLyfkap6sBmjWNSuo1YdutFnsEdw5sXzt8cwR1OOiV6duV67uknGA1u8RuGRXw-RDuTJDk0OGFFoivtwf5v=w340-h560-no?authuser=0')";
+
             }
-            else if ( weatherState == "Thunderstorm" )
+            else if ( weatherState == "Thunderstorm" )//
             {
                 document.querySelector("#weather-icon").className = "fa-solid fa-cloud-bolt";
+
+                application.style.backgroundImage = "url('https://lh3.googleusercontent.com/pw/AMWts8AynDiLxMRuLG4iKBKiMGAKAFM4tqhQqYuF_azmHapkhlQ05PTby3Wf1z-m8hIm2Bu5ne2oA-zUVAFs4c6-O7I4Rrf_hsZxwl9plouxnVVO9cf5DQIOT1z3aTjFsxiWDIAdZt7qUCvMUpJKrZxSSsqD=w340-h560-no?authuser=0')";
+
             }
-            else if ( weatherState == "Snow" )
+            else if ( weatherState == "Snow" )//
             {
                 document.querySelector("#weather-icon").className = "fa-solid fa-snowflake";
+
+                application.style.backgroundImage = "url('https://lh3.googleusercontent.com/pw/AMWts8AUZfvA8OeVfIcr1IbjQP8-emc43nFKVVaaJ-hKGb0O_XeO2e80vk_rBywPnaeoj1OEGn-352le8RLcnxU7Uqm-3TXTY86hnF1eM9uHXpvlKyzgGMBkKBh6zMIEky5nd9MZmSOSNdqh0FzAlEPR-4w4=w340-h560-no?authuser=0')";
+
             }
             else if ( weatherState == "Clear" )
             {
                 document.querySelector("#weather-icon").className = "fa-solid fa-sun";
+
+                application.style.backgroundImage = "url('https://lh3.googleusercontent.com/pw/AMWts8BrPzbhGkUq8Eewmik9JfXZOaOdIWR2XpceF3o4FfPuhBWW3c7FvQn50FCvGDcR8x7Ee3e-Y2rA2hchh-TbtXzpSJhEgecRQya-7LSXPKEJAW8o5uitjrUTpvu5nzgtTpyhwV-wy17RD-kp6RmBVut4=w340-h540-no?authuser=0')";
+
             }
             else if ( weatherState == "Drizzle" )
             {
                 document.querySelector("#weather-icon").className = "fa-solid fa-cloud-sun-rain";
+
+                application.style.backgroundImage = "url('https://lh3.googleusercontent.com/pw/AMWts8AAA1vIvfoJlcABmWiW0ajmcS_0tX9gE9KCmRDjn_E5T2_OyIztnewW1Fm8FwCgECJmirLyfkap6sBmjWNSuo1YdutFnsEdw5sXzt8cwR1OOiV6duV67uknGA1u8RuGRXw-RDuTJDk0OGFFoivtwf5v=w340-h560-no?authuser=0')";
+
             }
 
 
